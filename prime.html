@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>PRIME OR NOT</title>
+    </head>
+    <script>
+        function isPrime()
+        {
+            var a=parseInt(getElementById(("num").value));
+            ResultText="";
+            for(var i=0;i<=a;i++)
+        {
+            if(a%i==0)
+        {
+            ResultText=a+"is not a prime number";
+        }   else{
+            ResultText=a+"is a prime number";
+        }
+        document.getElementById("result").innerHTML=ResultText;
+        }
+        }
+    </script>  
+    <body>
+        <input type="number" id="num">ENTER NUMBER TO BE CHECKED
+        <button onclick="isPrime()">CHECK  IF PRIME</button>
+        <h2 id="result"></h2>
+    </body>  
+</html>

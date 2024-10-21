@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EVEN NUMBER</title>
+</head>
+<body>
+    <script>
+        function array(num) {
+            var evennos = [];
+            for (var i = 0; i < num.length; i++) {
+                if (num[i] % 2 == 0) {
+                    evennos.push(num[i]);
+                }
+            }
+            return evennos;
+        }
+
+        const num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        var Result = array(num);
+        alert("The even numbers are: " + Result);
+    </script>
+</body>
+</html>

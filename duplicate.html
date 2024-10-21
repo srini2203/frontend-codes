@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+    <head><title>DUPLICATE</title></head>
+    <body>
+        <script>
+            function remove(arr)
+            {
+                arr1=[]
+                arr1=Array.from(new Set(arr))    /* Array.from   can be used to change array like element to array back*/
+                return arr1                      /* Set contains no duplicate elements and new set produces a new set             */
+            }
+            arr=["as","as","gh","jhkd","lkj","jhdk","lkg"]
+            Result=remove(arr)
+            alert("The answer:"+Result)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <script>
+        function change() {
+            var para = document.getElementById('para').innerHTML;
+            if (para == "CHANGED") {
+                document.getElementById('para').innerHTML = "ORIGINAL";
+            } else {
+                document.getElementById('para').innerHTML = "CHANGED";
+            }
+        }
+    </script>
+    <head>CHANGE THE WORDS</head>
+    <body>
+        <p>CHANGE ORIGINAL TO CHANGED AND VICE-VERSA</p>
+        <button onclick="change()">CHANGE</button>
+        <p id="para">ORIGINAL</p>
+    </body>
+</html>
